@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="formu.css"/>
+    <link rel="stylesheet" href="buttones.css"/>
+</head>
+<body>
+    
+<nav>
+
+    <input type="checkbox" id="check"><!--Esta casilla de verificación está oculta () pero 
+    controla la visibilidad de la lista de navegación en pantallas más pequeñas.display: none;-->
+
+<label for="check" class="checkbtn">
+
+<i class="fas fa-bars"></i>
+
+</label>
+
+<a href="#" class="enlace">
+    
+<img src="https://www.uptvalencia.edu.ve/img/logo.png" alt="" class="logo">
+
+</a>
+
+<ul>
+<li><a href="MENU2.HTML">Estudiantes</a></li>
+<li><a href="periodos.html">Gestion de Años </a></li>
+<li><a href="materias.html">Materias</a></li>
+<li><a href="#">Notas</a></li>
+<li><a href="#">Sesion</a></li>
+</ul>
+
+</nav>
+
+<section>
+
+    <h1 style="text-align: center;">Notas</h1>
+
+    <form action="#" method="post" id="miFormulario">
+       
+
+        <label for="periodo">Seleccion el Estudiantes</label>
+        <select name="periodo" class="opciones">
+ 
+          <option value="">Miguel perez</option>
+          <option value="">Matias gonzalez</option>
+          <option value="">Luis diaz</option>
+
+        </select><br>
+        <label for="periodo">Seleccion el año Escolar </label>
+        <select name="periodo" class="opciones">
+ 
+          <option value="">1ero</option>
+          <option value="">2do</option>
+          <option value="">3ro</option>
+
+        </select><br>
+        <label for="periodo">Seleccione la Materia</label>
+        <select name="periodo" class="opciones">
+ 
+          <option value="">Fisica</option>
+          <option value="">Quimica</option>
+          <option value="">Deporte</option>
+
+        </select><br>
+
+        <label for="nombre">Nota:</label>
+        <input type="number" id="nombre" name="nombre" required max="20" min="1">
+        <input type="submit" value="Enviar" href="MENU2.HTML">
+    </form>
+
+</section>
+
+</body>
+</html>

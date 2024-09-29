@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="tabla.css"/>
+    <link rel="stylesheet" href="buttones.css"/>
+</head>
+<body>
+    
+<nav>
+
+    <input type="checkbox" id="check"><!--Esta casilla de verificación está oculta () pero 
+    controla la visibilidad de la lista de navegación en pantallas más pequeñas.display: none;-->
+
+<label for="check" class="checkbtn">
+
+<i class="fas fa-bars"></i>
+
+</label>
+
+<a href="#" class="enlace">
+    
+<img src="https://www.uptvalencia.edu.ve/img/logo.png" alt="" class="logo">
+
+</a>
+
+<ul>
+<li><a href="MENU2.HTML">Estudiantes</a></li>
+<li><a href="periodos.html">Gestion de Años </a></li>
+<li><a href="materias.html">Materias</a></li>
+<li><a href="#">Notas</a></li>
+<li><a href="#">Sesion</a></li>
+</ul>
+
+</nav>
+
+<section>
+  
+        <div class="container">
+          
+            <table>
+                <caption>
+                    Lista de Materias
+                    <button class="button2" ><a href="nueva-materia.html">Nuevo</a></button>
+                  </caption>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre de la materia</th>
+                        <th>Codigo de la materia</th>
+                       
+                
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr class="filas">
+                            <td>1</td>
+                            <td>Fisica</td>
+                            <td>
+                               FSC
+                            </td>
+                            <td>
+                                <a href="EditM.html">
+                                    Editar
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    Eliminar
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="filas">
+                            <td>Nombre2</td>
+                            <td>Grupo</td>
+                            <td>
+                                <a href="#">
+                                    Notas
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    Editar
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    Eliminar
+                                </a>
+                            </td>
+                      
+                        </tr>
+                        <tr class="filas">
+                            <td>Nombre3</td>
+                            <td>Grupo</td>
+                            <td>
+                                <a href="#">
+                                    Notas
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    Editar
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    Eliminar
+                                </a>
+                            </td>
+                          
+                        </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+</section>
+</body>
+</html>

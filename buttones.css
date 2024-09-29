@@ -1,0 +1,62 @@
+/*button/////////////////////////*/
+
+
+
+button{
+
+    background-color: black;
+    color: white;
+    padding: 10px;
+    
+    }
+    .button2{
+    
+    margin-left: 5px;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    }
+    
+    
+    /*****enlaces********/
+    
+    .container2{
+    text-align: center;
+    display: flex;
+    
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    }
+    
+    /*****/
+    
+    .control{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    }
+    /********************/
+    .container{
+    
+    
+    margin: 0 auto;
+    
+    }
+    .container button{
+    
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    .titulo{
+    
+
+   justify-content: center;
+   align-items: center;
+
+
+    }

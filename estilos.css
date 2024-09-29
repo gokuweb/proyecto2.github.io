@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;/*eliminar espacios*/
+    text-decoration: none;/*eliminar subrayados*/
+    list-style: none;/*eliminar puntos a las listas*/
+    box-sizing: border-box;/*los elementos no salgan del contenedor*/
+    
+    }
+    td{
+
+font-size: 100px;
+
+    }
+    nav{
+    background: black;
+    height: 80px;/*altura del nav osea el menu, la imagen 40px , padding de arriba y abajo 20px , la suma da 80px*/
+    width: 100%;
+  
+    
+    }
+    .enlace{/*imagen (contenedor)*/
+    position: absolute;
+    padding: 20px 50px;
+    }
+    .logo{
+    height: 40px;
+    }
+    nav ul{
+    float: right;
+    margin-right: 20px;
+ 
+    }
+    nav ul li{
+    display: inline-block;/*poner en linea izquieda a derecha*/
+    line-height: 80px;/*central*/
+    margin: 0 5px;/*arriba y abajo 0px y izquieda derecha 5px */
+    }
+    nav ul li a{ 
+        color: #fff;
+        font-size: 18px;
+        padding: 7px 13px;/*arriba y abajo 7px y izquieda derecha 13px */
+        border-radius: 3px;
+        text-transform: uppercase;
+        }
+        li a.active, li a:hover{
+        background: #000090;
+        transition: .5s;
+        }
+        .checkbtn{
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        line-height: 80px;/*central*/
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;/*para que se vea solo en dispositivos pequeños, no en pc*/
+        }
+        #check{
+        display: none;/*para que se vea solo en dispositivos pequeños, no en pc*/
+
+        }
+        section{
+        background: url(forest.jpg) no-repeat;/*no se repita*/
+        background-size: cover;/*todo el tamaño*/
+        background-position: center center;/*arriba y abajo = center*/
+        height: calc(100vh - 80px);/*ocupe el tamañp de la pantalla pero le reste los 80px del nav o menu */
+        }
+        @media (max-width: 952px){/*un tamañ un poco pequeño como tablets*/
+        .enlace{
+        padding-left: 20px;
+        }
+        nav ul li a{
+        font-size: 16px;
+        }
+        ul{
+            overflow-y: none; 
+
+        }
+    }
+    @media (max-width: 858px){/*celular*/
+    .checkbtn{
+    display: block;
+    }
+    ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;/*ocultarlo*/
+    text-align: center;
+    transition: all .5s;/*transicion a todos los elementos*/
+    overflow-y: none; 
+    }
+    nav ul li{
+    display: block;
+    margin: 50px 0;/**50px arriba y abajo derecha y izquierda 0px*/
+    line-height: 30px;
+    }
+    nav ul li a{
+    font-size: 20px;/*tamaño de letra*/
+    }
+    li a:hover, li a.active{
+    background: none;
+    color: red;
+    }
+    #check:checked ~ ul{/*abrir el menu #check: Este selector se refiere a un elemento HTML con el ID "check".
+         Por lo general, este es un elemento de tipo de tipo "checkbox".input
+        :checked: Este pseudo-selector se aplica al elemento solo cuando está marcado (seleccionado).#check
+        ~: Este símbolo (~) es un combinador de hermanos en CSS. Significa "hermano siguiente".
+        En este caso, estamos buscando un elemento que sea un hermano siguiente del elemento .#check
+        ul: Este selector se refiere a una lista no ordenada (un elemento ).<ul>
+        left: 0;
+        
+        Esta propiedad establece el valor del margen izquierdo del elemento seleccionado
+        (en este caso, la lista ) a 0 píxeles.ul
+        En resumen, este fragmento de CSS hace lo siguiente:
+        
+        Cuando el elemento  (el checkbox) está marcado, el hermano siguiente inmediato
+        (la lista ) se desplaza hacia la izquierda hasta la posición 0, */
+    left:0;
+
+
+    }
+    }            
+
+    @media (max-width: 1000px){/*un tamañ un poco pequeño como tablets*/
+ 
+
+        ul{
+
+
+         /*   width: 100%;
+  height: 100vh;*/
+  overflow-y: auto;  
+        }
+
+
+    }
+ 
+
+
